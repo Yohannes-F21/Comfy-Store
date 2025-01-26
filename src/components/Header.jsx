@@ -20,7 +20,7 @@ const Header = () => {
   // };
 
   return (
-    <header className=" py-2 text-neutral-content px-5">
+    <header className=" bg-neutral py-2 text-neutral-content px-5">
       <div className="align-element flex justify-center sm:justify-end">
         {/* {user ? (
           <div className='flex gap-x-2 sm:gap-x-8 items-center'>

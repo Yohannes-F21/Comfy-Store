@@ -17,7 +17,7 @@ const FeaturedProducts = () => {
           const { title, price, image } = product.attributes;
           //   const dollarsAmount = formatPrice(price); // other alternative
           return (
-            <div key={product.id}>
+            <Link to={`/product/${product.id}`} key={product.id}>
               <div className="card bg-base-100  shadow-xl hover:shadow-2xl transition duration-300">
                 <figure className="px-4 pt-4">
                   <img
@@ -33,7 +33,7 @@ const FeaturedProducts = () => {
                   </div>
                 </div>
               </div>
-            </div>
+            </Link>
           );
         })}
       </div>

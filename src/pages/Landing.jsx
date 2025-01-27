@@ -1,6 +1,7 @@
 import React from "react";
 import Hero from "../components/Hero";
-import customFetch from "../utils";
+import FeaturedProducts from "../components/FeaturedProducts";
+import { customFetch } from "../utils";
 const url = "/products?featured=true";
 
 export const loader = async () => {
@@ -14,6 +15,7 @@ const Landing = () => {
   return (
     <div>
       <Hero />
+      <FeaturedProducts />
     </div>
   );
 };
